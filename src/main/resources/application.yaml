@@ -1,0 +1,30 @@
+server:
+  port: 8080 # app port should always be 8080
+  servlet:
+    context-path: /
+
+
+management:
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+    enable.jvm: true
+
+    distribution:
+      percentiles-histogram:
+        http:
+          server:
+            requests: true
+
+
+
+  endpoints:
+    web:
+      exposure:
+        include: health, prometheus, loggers, metrics, scheduledtasks, threaddump, info
+
+
+logging:
+  level:
+    ROOT: INFO
