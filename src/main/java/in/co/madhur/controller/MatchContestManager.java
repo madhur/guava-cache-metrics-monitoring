@@ -1,4 +1,4 @@
-package guru.springframework.controller;
+package in.co.madhur.controller;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;

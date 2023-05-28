@@ -1,4 +1,4 @@
-package guru.springframework.controller;
+package in.co.madhur.controller;
 
 
 import java.util.List;
